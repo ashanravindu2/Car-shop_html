@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.banner{
+   width: auto;
+   height: auto;
+ 
+    background-image:linear-gradient(rgb(0, 0, 0),rgba(14, 11, 11, 0.829),rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+   
+}
+.navbar{
+    width: 95%;
+    height: 2%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:dotted;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: rgb(255, 238, 0);
+    position: absolute;
+    left:0 ;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.mainImg img{
+    justify-content: left;
+    margin: 10px;
+    width: 50%;
+    height: 50%;    
+}
+.mainImg img:hover{
+   
+}
+
+.Carabout{
+    width: 35%;
+    float: right;
+    text-align: left;
+ 
+    background-image:linear-gradient(rgba(71, 71, 71, 0.781),rgba(17, 15, 0, 0));
+    border-radius: 10px;
+    padding: 29px;
+    margin: 50px;
+
+ }
+ .Carabout h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    
+}
+.rating{
+    position: absolute;
+    transform: translate(1px);
+
+}
+.rating input{
+display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    float: right;
+}
+.rating label:before{
+    content: '\2605';
+    position: relative;
+    display: block;
+    font-size: 20px;
+    color: rgb(75, 70, 70);
+
+}
+.rating label:after{
+    content: '\2605';
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    color: rgb(255, 217, 0);
+    top:0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.479);
+
+    
+}
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked ~label:after {
+    opacity: 1;
+}
+.buy{
+    transform: translate(150px, 60px);
+   width: 150px;
+    height: 40px;
+    background-image:linear-gradient(rgb(42, 43, 42),rgba(7, 122, 7, 0.767) );
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.add{
+    transform: translate(154px, 60px);
+   width: 150px;
+    height: 40px;
+    color: #ffffff;
+    background-image:linear-gradient(rgba(42, 43, 42) ,rgba(255, 136, 0, 0.781));
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  
+}
+.buy:hover{
+    transform: translate(150px, 60px);
+   width: 150px;
+    height: 40px;
+    background-image:linear-gradient(rgb(7, 122, 7),rgb(42, 43, 42));
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #15ff00;
+}
+.add:hover{
+    transform: translate(154px, 60px);
+   width: 150px;
+    height: 40px;
+    color: #ffffff;
+    background-image:linear-gradient(rgb(255, 136, 0),rgba(42, 43, 42) );
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffa600;
+   
+}
+.descriptionP{
+    font-family:inherit ;
+    color: #ffffff;
+    text-align: left;   
+    background-image:linear-gradient(rgb(41, 41, 36),rgb(61, 59, 59));
+    padding: 29px;
+    border-radius: 11px; 
+    word-break: break-all;  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    width: 60%;
+    transform: translate(30px, -19px);
+  
+}
+.option li{
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: #ffffff;
+    padding: 07px;
+    transform: translate(50px, -1px);
+
+  
+}
+.video{
+    width: 60%;
+    height: 60%;
+    transform: translate(30px, 20px);
+    border-radius: 10px;
+    margin: 20px;
+}
+/* .carImageAll{
+    width: 35%;
+    transform: translate(30px, -18px);
+    
+}
+.car1{
+    border-radius: 11px;
+    width: 35%;
+    transform: translate(220px, -184px);
+} */
+
+.imgTable img{
+    width: 160px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    transform: translate(20px, -20px);
+}

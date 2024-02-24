@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.banner{
+   width: auto;
+   height: 150vh;
+ 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.562)), url(../assest/image/photo.avif);
+    background-size: cover;
+    background-position: center;
+   
+}
+.navbar{
+    width: 95%;
+    height: 2%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:dotted;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: rgb(255, 0, 255);
+    position: absolute;
+    left:0 ;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+
+}
+.content h1{
+    font-size: 50px;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px 0;
+    background: linear-gradient(180deg, #ff00f7, #e5ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.content p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin: 20px 0;
+    color: #ffffff;
+
+}
+.content h3{
+ 
+    padding: 10px 25px;
+    margin: 10px 0;
+    border: none;
+    background: #00000077;
+    color: #ffffff;
+    font-size: 25px;
+
+
+    
+}
+.selectPath img {
+    width: 22%;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #79786742;
+    padding: 2px;
+    border-radius: 5%;
+
+
+}
+.selectPath img:hover{
+
+    transition-duration:0.5s;
+    background-color: #ffffff42;
+
+}
+.table{
+ 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.table tr td img{
+    width: 265px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #42414175;
+    border-radius: 11px;
+    cursor: pointer;
+
+}
+.table tr td img:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0));
+    transition: 0.5s;
+    box-shadow: #000000 0px 40px 5px 0px;
+    box-sizing: border-box ;
+
+}

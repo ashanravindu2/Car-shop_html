@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.banner{
+   width: auto;
+   height: 150vh;
+ 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.562)), url(../assest/image/car2\ [Converted].png);
+    background-size: cover;
+    background-position: center;
+   
+}
+.navbar{
+    width: 95%;
+    height: 2%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:dotted;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: rgb(255, 0, 255);
+    position: absolute;
+    left:0 ;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.h1contact{
+    font-size: 60px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: yellow;
+    transform: translate(2%, 120%);
+    background: linear-gradient(180deg, #ff00d9, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(36%, 80%);
+}
+
+.contacttable{
+    width: 65%;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 10%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #ffffff5b;
+    color: #ffffff;
+    padding: 130px;
+    transform: translate(0%, -14%);
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.contacttable td{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    transform: translate(-99%, 0%);
+    color: rgb(255, 255, 255);
+
+   
+}
+.contacttable input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #47454550;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.messageCont{
+    width: 180%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #47454550;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.btnContact{
+    transform: translate(320%, -474%);
+    height: 44px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #202020;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+ 
+.btnContact:hover{
+    transform: translate(320%, -474%);
+    height: 44px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #383737;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
